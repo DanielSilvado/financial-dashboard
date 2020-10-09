@@ -3,6 +3,7 @@
   --color-line-border: #f8f8f8;
 
   --color-unactive: #c7c7c7;
+  --color-primary: #197BBD;
 }
 
 html,
@@ -35,8 +36,8 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
   height: 100%;
   width: 298px;
@@ -44,7 +45,7 @@ body {
 }
 
 .menu img {
-  margin-top: 48px;
+  margin: 48px 0 68px 0;
 }
 
 .menu ul{
@@ -52,19 +53,22 @@ body {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  text-decoration: none;
 }
 
 .menu ul li {
+  height: 39px;
+  width: 164px;
+  text-align: left;
   font-size: 14px;
   line-height: 17px;
   font-weight: bold;
-  font-style: none;
+  list-style: none;
   color: var(--color-unactive);
+  border-radius: 4px;
 }
 
 .menu ul li:hover {
-  height: 39px;
-  width: 164px;
-  border-radius: 4px;
   background: #f0f7ff;
+  color: var(--color-primary);
 }
